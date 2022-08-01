@@ -23,8 +23,8 @@ function createMainWindow() {
         resizable: isDev,
         backgroundColor: 'white',
         webPreferences: {
-            nodeIntegration: true,
-            contextIsolation: false,
+            nodeIntegration: true, ////不然无法识别require和process
+            contextIsolation: false, //不然无法识别require和process
         }
     })
 
